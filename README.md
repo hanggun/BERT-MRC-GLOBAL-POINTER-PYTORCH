@@ -7,7 +7,7 @@ I have down several experiments on msra and genia datasets which also can be dow
 
 For the msra dataset, it can achieve 0.9649 F1 with BERT encoder.
 
-For the genia dataset, it achieve 0.8209 f1 with BERT and 0.8243 with ROBERTA, when trained with both train and dev set, the test score can reach 0.8347. By using Efficient global pointer, it can achieve 0.8362 f1.
+For the genia dataset, it achieve 0.8209 f1 with BERT and 0.8243 with ROBERTA, when trained with both train and dev set, the test score can reach 0.8347. By using Efficient global pointer, it can achieve 0.8362 f1. Using roberta-large, the best f1 can reach 0.8398
 
 I encountered some small problems, such as using gradient accumulation and make global batch size to 32 which needs more epochs of 5 and the final is 0.8322. Using non acculation with only 8 batch size and 3 epochs, the best is 0.8347. The behaviour is not same with different batch sizes which is not tackled yet.
 
